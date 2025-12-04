@@ -258,9 +258,9 @@ GameObject:
   - component: {fileID: 114620092}
   - component: {fileID: 114620091}
   - component: {fileID: 114620090}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1645,9 +1645,9 @@ GameObject:
   - component: {fileID: 1079808323}
   - component: {fileID: 1079808322}
   - component: {fileID: 1079808321}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2401,9 +2401,9 @@ GameObject:
   - component: {fileID: 1486028138}
   - component: {fileID: 1486028137}
   - component: {fileID: 1486028136}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2512,9 +2512,9 @@ GameObject:
   - component: {fileID: 1562710122}
   - component: {fileID: 1562710121}
   - component: {fileID: 1562710120}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2916,7 +2916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovementTutorial
   moveSpeed: 15
   groundDrag: 5
-  jumpForce: 12
+  jumpForce: 20
   jumpCooldown: 0.25
   airMultiplier: 0.1
   walkSpeed: 0
@@ -2925,7 +2925,7 @@ MonoBehaviour:
   playerHeight: 2
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 0
   orientation: {fileID: 1255242208}
 --- !u!1 &1806039351
 GameObject:
@@ -3070,7 +3070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileGunTutorial
   bullet: {fileID: 7985567981094530905, guid: be275312bb7773049ba27b9dadcbec39, type: 3}
-  shootForce: 300
+  shootForce: 100
   upwardForce: 0
   timeBetweenShooting: 0.1
   spread: 3
@@ -3079,8 +3079,8 @@ MonoBehaviour:
   magazineSize: 100
   bulletsPerTap: 1
   allowButtonHold: 1
-  playerRb: {fileID: 0}
-  recoilForce: 0
+  playerRb: {fileID: 1713185520}
+  recoilForce: 2
   fpsCam: {fileID: 236562233}
   attackPoint: {fileID: 1473587611}
   muzzleFlash: {fileID: 0}
@@ -3098,7 +3098,7 @@ GameObject:
   - component: {fileID: 1985553033}
   - component: {fileID: 1985553032}
   - component: {fileID: 1985553031}
-  m_Layer: 10
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3416,9 +3416,9 @@ GameObject:
   - component: {fileID: 2076595579}
   - component: {fileID: 2076595578}
   - component: {fileID: 2076595577}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
