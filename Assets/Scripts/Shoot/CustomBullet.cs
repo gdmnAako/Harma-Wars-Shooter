@@ -4,7 +4,7 @@ public class CustomBullet : MonoBehaviour
 {
     //Assignables
     public Rigidbody rb;
-    public GameObject explosion;
+    public ParticleSystem explosion;
     public LayerMask whatIsEnemies;
 
     //Stats
@@ -42,22 +42,25 @@ public class CustomBullet : MonoBehaviour
 
     private void Explode()
     {
+        
         //Instantiate explosion
         if (explosion != null) Instantiate(explosion, transform.position, Quaternion.identity);
+        
+        
 
         //Check for enemies 
-        Collider[] enemies = Physics.OverlapSphere(transform.position, explosionRange, whatIsEnemies);
-        for (int i = 0; i < enemies.Length; i++)
-        {
-            //Get component of enemy and call Take Damage
-
-            //Just an example!
-            ///enemies[i].GetComponent<ShootingAi>().TakeDamage(explosionDamage);
-
-            //Add explosion force (if enemy has a rigidbody)
-            if (enemies[i].GetComponent<Rigidbody>())
-                enemies[i].GetComponent<Rigidbody>().AddExplosionForce(explosionForce, transform.position, explosionRange);
-        }
+        // Collider[] enemies = Physics.OverlapSphere(transform.position, explosionRange, whatIsEnemies);
+        // for (int i = 0; i < enemies.Length; i++)
+        // {
+        //     //Get component of enemy and call Take Damage
+        //
+        //     //Just an example!
+        //     ///enemies[i].GetComponent<ShootingAi>().TakeDamage(explosionDamage);
+        //
+        //     //Add explosion force (if enemy has a rigidbody)
+        //     //if (enemies[i].GetComponent<Rigidbody>())
+        //         enemies[i].GetComponent<Rigidbody>().AddExplosionForce(explosionForce, transform.position, explosionRange);
+        // }
 
         //Add a little delay, just to make sure everything works fine
         Invoke("Delay", 0.05f);
@@ -65,6 +68,7 @@ public class CustomBullet : MonoBehaviour
     private void Delay()
     {
         Destroy(gameObject);
+        
     }
 
     private void OnCollisionEnter(Collision collision)

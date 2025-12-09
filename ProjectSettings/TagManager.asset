@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Undefined
   - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -36,9 +37,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - Enemy
+  - WhatIsPlayer
+  - WhatIsBullet
+  - WhatIsEnemies
   m_SortingLayers:
   - name: Default
     uniqueID: 0

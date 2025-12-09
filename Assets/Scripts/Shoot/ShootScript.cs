@@ -30,7 +30,7 @@ public class ProjectileGunTutorial : MonoBehaviour
     public Transform attackPoint;
 
     //Graphics
-    public GameObject muzzleFlash;
+   // public GameObject muzzleFlash;
     public TextMeshProUGUI ammunitionDisplay;
 
     //bug fixing :D
@@ -107,8 +107,8 @@ public class ProjectileGunTutorial : MonoBehaviour
         currentBullet.GetComponent<Rigidbody>().AddForce(fpsCam.transform.up * upwardForce, ForceMode.Impulse);
 
         //Instantiate muzzle flash, if you have one
-        if (muzzleFlash != null)
-            Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
+        //if (muzzleFlash != null)
+           // Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
 
         bulletsLeft--;
         bulletsShot++;
