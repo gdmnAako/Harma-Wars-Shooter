@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CustomBullet
   rb: {fileID: 7885561713914185094}
-  explosion: {fileID: 198656289721292014, guid: 64891a0eb28db934898420d80ca07cb3, type: 3}
+  explosion: {fileID: 0}
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 2147483648
@@ -307,3 +307,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fd233a6504ee9a4191e89ad7ec84e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::bullet
+  explosion: {fileID: 198656289721292014, guid: 64891a0eb28db934898420d80ca07cb3, type: 3}
