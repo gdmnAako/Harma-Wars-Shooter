@@ -7,8 +7,8 @@ public class EnemyShoot : MonoBehaviour
     
     public Transform player;
 
-    public float shootCD = 0.5f;
-    public float shootSpeed = 30f;
+    public float shootCD = 2f;
+    public float shootSpeed = 75f;
 
     private float timer;
 
